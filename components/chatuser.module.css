@@ -1,0 +1,47 @@
+.chat_user_info {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.chat_user_info > p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.preview_message {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100px;
+}
+
+.chat_user {
+  display: flex;
+  align-items: center;
+  background-color: #fbd05162;
+  margin: 5px 0;
+  padding: 6px;
+  border-radius: 10px;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.chat_user span {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat_user:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .preview_message {
+    display: none;
+  }
+  .chat_user {
+    height: 80%;
+  }
+}

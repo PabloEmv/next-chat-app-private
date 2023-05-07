@@ -1,0 +1,64 @@
+.chats {
+  grid-area: cs;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.chats_tile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chats_users {
+  overflow: scroll;
+  height: 100%;
+}
+
+.search_users {
+  height: 25px;
+  width: 90%;
+  font-size: 1.1rem;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #99999999;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .chats {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .chats {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 2px 5px;
+  }
+
+  .chats_tile > h2 {
+    display: none;
+  }
+
+  .chats_users {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .search_users {
+    margin: 2px 6px;
+    width: 150px;
+  }
+}

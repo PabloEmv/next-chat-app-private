@@ -1,0 +1,44 @@
+.form_config {
+  display: grid;
+  place-items: center;
+  gap: 15px;
+}
+
+.form_config input {
+  height: 25px;
+  width: 350px;
+  border-radius: 5px;
+  border: 2px solid #66666660;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  padding: 8px;
+}
+
+.form_config > button {
+  padding: 10px;
+  background-color: #ffd91b82;
+  border: 2px solid #ffda1b;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.form_config > button:hover {
+  transition: ease 0.2s;
+  background-color: #ffda1b;
+}
+
+.profile_image {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #fbd051;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}

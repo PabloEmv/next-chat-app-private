@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d5d5d5;
+  font-family: "Poppins", sans-serif;
+}
+
+.chat-screen {
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.chatInterface {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 10px;
+}
+
+.chat-template {
+  grid-template-areas: "sb cs cs cs ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct";
+}
+
+.contacts-template {
+  grid-template-areas: "sb mc mc mc mc mc mc mc mc mc mc mc mc mc  ac ac ac ac ac";
+}
+
+.normal-template {
+  grid-template-areas: "sb ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce";
+}
+
+.user-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.text-link {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* pantalla de configuración */
+
+.config-screen {
+  display: grid;
+  place-items: center;
+}
+.default-screen {
+  background-color: white;
+  grid-area: ce;
+  border-radius: 15px;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+/* responsividad */
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .chatInterface {
+    grid-template-rows: repeat(18, 1fr);
+  }
+  .chat-template {
+    grid-template-areas:
+      "cs cs cs cs cs cs cs cs cs cs cs cs cs cs cs cs cs cs cs"
+      "cs cs cs cs cs cs cs cs cs cs cs cs cs cs cs cs cs cs cs"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct ct"
+      "sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb";
+  }
+  .contacts-template {
+    grid-template-areas:
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "mc mc mc mc mc mc mc mc mc mc mc mc mc mc ac ac ac ac ac"
+      "sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb";
+  }
+
+  .normal-template {
+    grid-template-areas:
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce ce"
+      "sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb sb";
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chat-screen {
+    padding: 5px;
+  }
+  .user-img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+}
